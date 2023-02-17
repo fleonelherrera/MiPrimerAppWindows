@@ -94,10 +94,12 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellido.Location = new System.Drawing.Point(127, 9);
+            this.txtApellido.MaxLength = 150;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(352, 20);
-            this.txtApellido.TabIndex = 5;
+            this.txtApellido.TabIndex = 0;
             // 
             // txtResultado
             // 
@@ -109,42 +111,50 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Location = new System.Drawing.Point(127, 94);
+            this.txtDireccion.MaxLength = 150;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(352, 20);
-            this.txtDireccion.TabIndex = 7;
+            this.txtDireccion.TabIndex = 3;
             // 
             // txtEdad
             // 
             this.txtEdad.Location = new System.Drawing.Point(127, 68);
+            this.txtEdad.MaxLength = 3;
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(49, 20);
-            this.txtEdad.TabIndex = 8;
+            this.txtEdad.TabIndex = 2;
+            this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
             // txtNombre
             // 
+            this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Location = new System.Drawing.Point(127, 39);
+            this.txtNombre.MaxLength = 150;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(352, 20);
-            this.txtNombre.TabIndex = 9;
+            this.txtNombre.TabIndex = 1;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(127, 275);
+            this.btnAceptar.Location = new System.Drawing.Point(158, 275);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(83, 23);
-            this.btnAceptar.TabIndex = 10;
+            this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(253, 275);
+            this.btnCancelar.Location = new System.Drawing.Point(301, 275);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(83, 23);
-            this.btnCancelar.TabIndex = 11;
+            this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Form1
             // 
